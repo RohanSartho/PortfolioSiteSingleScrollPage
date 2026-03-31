@@ -19,19 +19,19 @@ const PrepEdgeLogo = () => (
     </svg>
 );
 
-const WordleLogo = () => (
-    <svg viewBox="0 0 160 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-40 h-14">
-        <rect x="0"   y="4" width="28" height="28" rx="5" fill="#002395" />
-        <text x="14"  y="23" textAnchor="middle" fill="white" fontSize="18" fontWeight="700" fontFamily="sans-serif">W</text>
-        <rect x="33"  y="4" width="28" height="28" rx="5" fill="#4B5563" />
-        <text x="47"  y="23" textAnchor="middle" fill="white" fontSize="18" fontWeight="700" fontFamily="sans-serif">O</text>
-        <rect x="66"  y="4" width="28" height="28" rx="5" fill="#ED4245" />
-        <text x="80"  y="23" textAnchor="middle" fill="white" fontSize="18" fontWeight="700" fontFamily="sans-serif">R</text>
-        <rect x="99"  y="4" width="28" height="28" rx="5" fill="#002395" />
-        <text x="113" y="23" textAnchor="middle" fill="white" fontSize="18" fontWeight="700" fontFamily="sans-serif">D</text>
-        <rect x="132" y="4" width="28" height="28" rx="5" fill="#6aaa64" />
-        <text x="146" y="23" textAnchor="middle" fill="white" fontSize="18" fontWeight="700" fontFamily="sans-serif">L</text>
-        <text x="80" y="50" textAnchor="middle" fill="#6B7280" fontSize="10" fontFamily="sans-serif" fontStyle="italic">en français</text>
+const LeMotJusteLogo = () => (
+    <svg viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-40 h-14">
+        {/* Quebec blue background */}
+        <rect x="10" y="10" width="60" height="60" rx="12" fill="#002395" />
+        {/* Fleur-de-lis accent */}
+        <text x="40" y="55" textAnchor="middle" fill="white" fontSize="36" fontWeight="700">⚜</text>
+
+        {/* Text: Le Mot Juste */}
+        <text x="85" y="32" fill="#002395" fontSize="16" fontWeight="700" fontFamily="sans-serif">Le Mot</text>
+        <text x="85" y="50" fill="#002395" fontSize="16" fontWeight="700" fontFamily="sans-serif">Juste</text>
+
+        {/* Tagline */}
+        <text x="85" y="65" fill="#6B7280" fontSize="10" fontFamily="sans-serif" fontStyle="italic">The Right Word</text>
     </svg>
 );
 
@@ -103,15 +103,15 @@ const personalProjects = [
     },
     {
         id: 'p2',
-        title: 'French Wordle',
-        url: null,
-        github: 'https://github.com/RohanSartho',
+        title: 'Le Mot Juste',
+        url: 'https://lemotjuste.vercel.app/',
+        github: 'https://github.com/RohanSartho/le-mot-juste',
         description:
-            'Wordle-style daily puzzle game for learning French vocabulary. Streak tracking, instant tile feedback, and a growing word bank.',
-        tags: ['Language Learning', 'React', 'Game Design'],
+            '🇫🇷 "The Right Word" — A real-time multiplayer French vocabulary game built around charades. One player describes a French word using only sentences (no gestures, no translations); while everyone else shouts their guess. First to get it right wins the round. Built for French learners and Francophiles — whether learning Parisian French 🇫🇷 or Québécois.',
+        tags: ['Multiplayer Game', 'French', 'Real-Time'],
         banner: (
-            <div className="h-32 flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-red-50 px-6">
-                <WordleLogo />
+            <div className="h-32 flex items-center justify-center bg-gradient-to-br from-blue-100 via-white to-blue-50 px-6">
+                <LeMotJusteLogo />
             </div>
         ),
     },
