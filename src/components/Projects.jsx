@@ -7,6 +7,7 @@
 
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import findrecLogo from '../assets/findrec_logo.png';
+import fleurDeLis from '../assets/fleur-de-lis.png';
 
 /* ─── Inline SVG logos (personal apps) ──────────────────────────── */
 
@@ -20,32 +21,16 @@ const PrepEdgeLogo = () => (
 );
 
 const LeMotJusteLogo = () => (
-    <svg viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-56 h-20">
-        {/* Quebec blue background */}
-        <rect x="10" y="10" width="60" height="60" rx="12" fill="#002395" />
+    <div className="h-32 flex items-center justify-center gap-6 px-6">
+        {/* Fleur-de-lis image */}
+        <img src={fleurDeLis} alt="Fleur-de-lis" className="h-20 w-auto object-contain" />
 
-        {/* Fleur-de-lis SVG */}
-        <g transform="translate(40, 40)">
-            {/* Center circle */}
-            <circle cx="0" cy="0" r="4" fill="white" />
-
-            {/* Top petal */}
-            <path d="M 0,-18 Q -6,-12 -6,-6 Q -6,2 0,4 Q 6,2 6,-6 Q 6,-12 0,-18 Z" fill="white" />
-
-            {/* Bottom-left petal */}
-            <path d="M -14,10 Q -8,6 -2,8 Q 2,10 2,16 Q 2,22 -6,20 Q -14,18 -14,10 Z" fill="white" />
-
-            {/* Bottom-right petal */}
-            <path d="M 14,10 Q 8,6 2,8 Q -2,10 -2,16 Q -2,22 6,20 Q 14,18 14,10 Z" fill="white" />
-        </g>
-
-        {/* Text: Le Mot Juste */}
-        <text x="85" y="32" fill="#002395" fontSize="22" fontWeight="700" fontFamily="sans-serif">Le Mot</text>
-        <text x="85" y="50" fill="#002395" fontSize="22" fontWeight="700" fontFamily="sans-serif">Juste</text>
-
-        {/* Tagline */}
-        <text x="85" y="65" fill="#6B7280" fontSize="14" fontFamily="sans-serif" fontStyle="italic">The Right Word</text>
-    </svg>
+        {/* Text: French + English */}
+        <div className="flex flex-col justify-center">
+            <div className="text-[22px] font-bold" style={{ color: '#002395' }}>Le Mot Juste</div>
+            <div className="text-sm italic" style={{ color: '#6B7280' }}>The Right Word</div>
+        </div>
+    </div>
 );
 
 /* ─── Work product portfolio ─────────────────────────────────────── */
