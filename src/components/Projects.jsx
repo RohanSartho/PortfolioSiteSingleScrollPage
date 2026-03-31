@@ -20,33 +20,31 @@ const PrepEdgeLogo = () => (
 );
 
 const LeMotJusteLogo = () => (
-    <svg viewBox="0 0 260 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-56 h-20">
+    <svg viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-56 h-20">
         {/* Quebec blue background */}
-        <rect x="8" y="8" width="64" height="64" rx="12" fill="#002395" />
+        <rect x="10" y="10" width="60" height="60" rx="12" fill="#002395" />
 
-        {/* Fleur-de-lis — heraldic style */}
+        {/* Fleur-de-lis SVG */}
         <g transform="translate(40, 40)">
-            {/* Center vertical stem */}
-            <path d="M -2,-20 L -2,8 L -6,12 L 6,12 L 2,8 L 2,-20 Z" fill="white" />
+            {/* Center circle */}
+            <circle cx="0" cy="0" r="4" fill="white" />
 
-            {/* Top petal (pointed) */}
-            <path d="M -2,-20 Q -8,-28 -8,-35 Q -8,-40 -2,-42 Q 2,-40 2,-35 Q 2,-28 2,-20 Z" fill="white" />
+            {/* Top petal */}
+            <path d="M 0,-18 Q -6,-12 -6,-6 Q -6,2 0,4 Q 6,2 6,-6 Q 6,-12 0,-18 Z" fill="white" />
 
-            {/* Left side lobe (rounded) */}
-            <path d="M -2,0 Q -12,-2 -16,4 Q -18,12 -12,16 Q -6,14 -2,8 Z" fill="white" />
+            {/* Bottom-left petal */}
+            <path d="M -14,10 Q -8,6 -2,8 Q 2,10 2,16 Q 2,22 -6,20 Q -14,18 -14,10 Z" fill="white" />
 
-            {/* Right side lobe (rounded) */}
-            <path d="M 2,0 Q 12,-2 16,4 Q 18,12 12,16 Q 6,14 2,8 Z" fill="white" />
-
-            {/* Crossbar */}
-            <rect x="-8" y="10" width="16" height="5" fill="white" />
-
-            {/* Bottom point */}
-            <path d="M -2,12 L -4,20 L 0,24 L 4,20 L 2,12 Z" fill="white" />
+            {/* Bottom-right petal */}
+            <path d="M 14,10 Q 8,6 2,8 Q -2,10 -2,16 Q -2,22 6,20 Q 14,18 14,10 Z" fill="white" />
         </g>
 
-        {/* Text: Le Mot Juste — single line */}
-        <text x="82" y="48" fill="#002395" fontSize="26" fontWeight="700" fontFamily="sans-serif">Le Mot Juste</text>
+        {/* Text: Le Mot Juste */}
+        <text x="85" y="32" fill="#002395" fontSize="22" fontWeight="700" fontFamily="sans-serif">Le Mot</text>
+        <text x="85" y="50" fill="#002395" fontSize="22" fontWeight="700" fontFamily="sans-serif">Juste</text>
+
+        {/* Tagline */}
+        <text x="85" y="65" fill="#6B7280" fontSize="14" fontFamily="sans-serif" fontStyle="italic">The Right Word</text>
     </svg>
 );
 
